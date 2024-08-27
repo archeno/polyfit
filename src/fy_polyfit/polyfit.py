@@ -19,7 +19,7 @@ import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 
-__version__ = '1.0.0'
+__version__ = '1.0.2'
 
 # 计算均方根误差函数
 def  cal_rmse(y_true, y_pred):

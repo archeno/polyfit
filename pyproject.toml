@@ -9,6 +9,10 @@ dynamic = ["version"]
 authors = [
   {name = "fengyang", email = "yfeng880@163.com"}
 ]
+dependencies = [
+  "numpy",
+  "matplotlib",
+]
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
