@@ -40,6 +40,6 @@ polyfit = "fy_polyfit.polyfit:main"
 
 [project.urls]
 Documentation = "https://readthedocs.org"
-Repository = "https://github.com/me/spam.git"
-Issues = "https://github.com/me/spam/issues"
-Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+Repository = "https://github.com/archeno/polyfit"
+Issues = "https://github.com/archeno/polyfit/issues"
+Changelog = "https://github.com/archeno/polyfit/commits/v1.1.0"
