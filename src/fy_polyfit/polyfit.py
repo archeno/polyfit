@@ -88,7 +88,7 @@ def main():
 
         #绘制原始数据点和一次拟合曲线
         ax[0].scatter(x, y, label='source points')
-        ax[0].plot(x_fit, y_fit1, color='red',label=f" Linear Fitted Curve, rmse = {rmse1 *100:.2f}%")
+        ax[0].plot(x_fit, y_fit1, color='red',label=f" Linear Fitted Curve, rmse = {(rmse1 *100)/np.mean(y):.2f}%")
         ax[0].set_title('Linear Curve Fitting')
         ax[0].set_xlabel('x')
         ax[0].set_ylabel('y')
@@ -98,7 +98,7 @@ def main():
 
         #绘制原始数据点和二次拟和曲线
         ax[1].scatter(x, y, label='source points')
-        ax[1].plot(x_fit, y_fit2, color='blue',label=f" Quadratic Fitted Curve, rmse = {rmse2 * 100:.2f}%")
+        ax[1].plot(x_fit, y_fit2, color='blue',label=f" Quadratic Fitted Curve, rmse = {(rmse2 * 100)/np.mean(y):.2f}%")
         ax[1].set_title('Quadratic Curve Fitting')
         ax[1].set_xlabel('x')
         ax[1].set_ylabel('y')
