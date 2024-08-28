@@ -24,4 +24,4 @@
 
 执行结果如下：
 
-![拟合图形](https://github.com/archeno/polyfit/blob/main/images/fitting.png)
+![拟合图形](https://github.com/archeno/polyfit/blob/main/images/fitting.png?raw=true)
