@@ -117,7 +117,7 @@ def main():
  
         # plt.draw()
         # 保存图片到images文件夹下
-        plt.savefig('../../images/fitting.png')
+        # plt.savefig('fitting.png')
         plt.show()
     
     except FileNotFoundError as e:
