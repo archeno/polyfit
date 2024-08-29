@@ -26,6 +26,12 @@ def  cal_rmse(y_true, y_pred):
     return np.sqrt(np.mean((y_pred - y_true) **2))
 
 
+def PolyfitLinear(x, y):
+     return np.polyfit(x, y, 1)
+
+def PolyfitQuadratic(x, y):
+     return np.polyfit(x, y, 2)
+
 def main():
     parser = argparse.ArgumentParser(description='从指定文件中读取数据,默认为data.txt, 无头部,空格分隔,两列')
     parser.add_argument('filename', nargs='?', default='data.txt', 
@@ -108,8 +114,12 @@ def main():
         ax[1].text(0.5, 0.8, formula2,color='blue',fontsize=16, transform=ax[1].transAxes, verticalalignment='top', horizontalalignment='center')
 
         plt.tight_layout()
+ 
+        # plt.draw()
+        # 保存图片到images文件夹下
+        plt.savefig('../../images/fitting.png')
         plt.show()
-
+    
     except FileNotFoundError as e:
         print(e)
     

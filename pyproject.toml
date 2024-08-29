@@ -35,6 +35,7 @@ classifiers = [
 # path = "src/fy_polyfit/polyfit.py"
 source = "vcs"
 
+
 [project.scripts]
 polyfit = "fy_polyfit.polyfit:main"
 
